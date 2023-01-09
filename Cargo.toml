@@ -1,0 +1,16 @@
+[package]
+name = "user-profile"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "profile_api"
+path = "profile_api/src/main.rs"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+
+[workspace]
+members = [
+    "profile_api",
+    "profile_view",
+    ]
